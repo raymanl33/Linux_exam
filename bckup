@@ -13,7 +13,7 @@ while getopts "d" opt; do
 			;;
 
 		?)
-			echo "test23"
+			echo "please enter -d"
 			;;
 
 	esac
