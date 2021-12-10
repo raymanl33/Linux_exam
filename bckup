@@ -3,12 +3,13 @@
 
 INPUT="$1"
 
-touch 'test1'
+
 
 while getopts "d" opt; do
 	case "${opt}" in
 		d)
-			echo "test"
+			echo "/home/vagrant/exam"
+			tar -czf archive-name.tar.gz /home/vagrant/exam
 			;;
 
 		?)
