@@ -1,0 +1,13 @@
+[Unit]
+
+Description="This unit file will run the bckup script"
+
+[Service]
+User=vagrant
+WorkingDirectory=/home/vagrant/bin
+ExecStart=/bin/bash bckup
+ 
+
+
+[Install]
+WantedBy=multi-user.target

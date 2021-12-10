@@ -1,0 +1,21 @@
+#/bin/bash
+
+
+INPUT="$1"
+
+touch 'test1'
+
+while getopts "d" opt; do
+	case "${opt}" in
+		d)
+			echo "test"
+			;;
+
+		?)
+			echo "test23"
+			;;
+
+	esac
+
+done
+shift $((OPTIND-1))
